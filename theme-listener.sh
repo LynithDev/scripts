@@ -30,6 +30,6 @@ change_theme() {
 
 while read -r line; do
     [[ -n $line ]] || change_theme 
-done < <(dconf watch /org/gnome/desktop/interface/color-scheme)
+done < <(dconf watch $INTERFACE/color-scheme)
 
 
